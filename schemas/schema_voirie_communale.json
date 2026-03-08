@@ -1,0 +1,53 @@
+{
+  "allOf": [
+    {
+      "$ref": "https://geojson.org/schema/FeatureCollection.json",
+      "name": "schema-voirie-communale",
+      "title": "Voirie communale",
+      "description": "Spécification du fichier d'échange relatif aux données concernant la localisation géographique et les caractéristiques de la voirie communale (voies communales et chemins ruraux).",
+      "countryCode": "FR",
+      "homepage": "https://github.com/Cliath/schema_voirie_communale",
+      "version": "0.1.0",
+      "created": "2026-03-08",
+      "lastModified": "2026-03-08",
+      "contributors": [
+        {
+          "title": "Yann Schwarz",
+          "email": "yann.schwarz@ign.fr",
+          "organisation": "IGN",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "type": "object",
+  "properties": {
+    "features": {
+      "type": "array",
+      "items": {
+        "title": "GeoJSON Feature",
+        "type": "object",
+        "required": ["properties"],
+        "properties": {
+          "properties": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "format": "uuid",
+                "description": "Identifiant unique et pérenne du tronçon (UUID v4).",
+                "examples": ["550e8400-e29b-41d4-a716-446655440000"]
+              },
+              "id_externe": {
+                "type": "string",
+                "description": "Identifiant du tronçon dans un référentiel externe (BD TOPO IGN, OpenStreetMap, données locales…).",
+                "examples": ["TRONROUT0000002203640209", "5765760"]
+              }
+            },
+            "required": ["id"]
+          }
+        }
+      }
+    }
+  }
+}

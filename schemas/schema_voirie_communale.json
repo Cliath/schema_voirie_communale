@@ -1,23 +1,24 @@
 {
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "name": "schema-voirie-communale",
+  "title": "Voirie communale",
+  "description": "Spécification du fichier d'échange relatif aux données concernant la localisation géographique et les caractéristiques de la voirie communale (voies communales et chemins ruraux).",
+  "countryCode": "FR",
+  "homepage": "https://github.com/Cliath/schema_voirie_communale",
+  "version": "0.1.0",
+  "created": "2026-03-08",
+  "lastModified": "2026-03-08",
+  "contributors": [
+    {
+      "title": "Yann Schwarz",
+      "email": "yann.schwarz@ign.fr",
+      "organisation": "IGN",
+      "role": "author"
+    }
+  ],
   "allOf": [
     {
-      "$ref": "https://geojson.org/schema/FeatureCollection.json",
-      "name": "schema-voirie-communale",
-      "title": "Voirie communale",
-      "description": "Spécification du fichier d'échange relatif aux données concernant la localisation géographique et les caractéristiques de la voirie communale (voies communales et chemins ruraux).",
-      "countryCode": "FR",
-      "homepage": "https://github.com/Cliath/schema_voirie_communale",
-      "version": "0.1.0",
-      "created": "2026-03-08",
-      "lastModified": "2026-03-08",
-      "contributors": [
-        {
-          "title": "Yann Schwarz",
-          "email": "yann.schwarz@ign.fr",
-          "organisation": "IGN",
-          "role": "author"
-        }
-      ]
+      "$ref": "https://geojson.org/schema/FeatureCollection.json"
     }
   ],
   "type": "object",
@@ -42,6 +43,12 @@
                 "type": "string",
                 "description": "Identifiant du tronçon dans un référentiel externe (BD TOPO IGN, OpenStreetMap, données locales…).",
                 "examples": ["TRONROUT0000002203640209", "5765760"]
+              },
+              "code_insee": {
+                "type": "string",
+                "description": "Code INSEE de la commune sur laquelle se situe le tronçon.",
+                "pattern": "^([013-9]\\d|2[AB1-9])\\d{3}$",
+                "examples": ["75056", "2A004"]
               }
             },
             "required": ["id"]

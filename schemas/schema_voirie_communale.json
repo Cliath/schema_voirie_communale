@@ -89,8 +89,8 @@
               "code_insee": {
                 "type": "string",
                 "pattern": "^([013-9]\\d|2[AB1-9])\\d{3}$",
-                "description": "Code INSEE de la commune sur laquelle se situe le tronçon.",
-                "examples": ["75056", "2A004"]
+                "description": "Code INSEE de la commune sur laquelle se situe le tronçon. Couvre la France métropolitaine (01–19, 21–19, 21–95), la Corse (2A, 2B), les DROM (971–976) et les collectivités d'outre-mer (977–989).",
+                "examples": ["75056", "2A004", "97105", "98735"]
               }
             },
             "required": ["id"]

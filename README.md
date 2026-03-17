@@ -50,10 +50,12 @@ Les données doivent être fournies au format **GeoJSON** (`FeatureCollection`),
 550e8400-e29b-41d4-a716-446655440000
 ```
 
-**`code_insee`** — Code à 5 caractères, couvrant la France métropolitaine et la Corse (`2A`, `2B`) :
+**`code_insee`** — Code à 5 caractères, couvrant la France métropolitaine, la Corse (`2A`, `2B`), les DROM (`971`–`976`) et les collectivités d'outre-mer (`977`–`989`) :
 ```
 75056   → Paris
 2A004   → Ajaccio
+97105   → Basse-Terre (Guadeloupe)
+98735   → Papeete (Polynésie française)
 ```
 
 ---

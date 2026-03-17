@@ -65,6 +65,7 @@ Les données doivent être fournies au format **GeoJSON** (`FeatureCollection`),
 - [Section 4 bis CRPM — Recensement](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006071367/LEGISCTA000046814249/) (Articles R161-11-1 à D161-11-4)
 - [Chapitre Ier CRPM — Les chemins ruraux](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006071367/LEGISCTA000006152165/) (Articles L161-1 à L161-13)
 - [Article D161-14 CRPM](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006587664/) — conservation et surveillance des chemins ruraux
+- [Code de la voirie routière — Titre IV : Voirie communale](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070667/LEGISCTA000006116688/) (Articles L141-1 à L141-13)
 
 ---
 

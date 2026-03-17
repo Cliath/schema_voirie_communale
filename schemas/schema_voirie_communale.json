@@ -36,6 +36,7 @@
               "id": {
                 "type": "string",
                 "format": "uuid",
+                "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$",
                 "description": "Identifiant unique et pérenne du tronçon (UUID v4).",
                 "examples": ["550e8400-e29b-41d4-a716-446655440000"]
               },
@@ -46,8 +47,8 @@
               },
               "code_insee": {
                 "type": "string",
-                "description": "Code INSEE de la commune sur laquelle se situe le tronçon.",
                 "pattern": "^([013-9]\\d|2[AB1-9])\\d{3}$",
+                "description": "Code INSEE de la commune sur laquelle se situe le tronçon.",
                 "examples": ["75056", "2A004"]
               }
             },
